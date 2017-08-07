@@ -28,7 +28,7 @@ function make_guy()
   y = 100,
   on_ground = true,
   speed = 1.5,
-  yspeed = -8,
+  yspeed = -6,
   anim1 = {2,3,4},
   anim2 = {5,6,7},
   anim0 = {8,9,10},
@@ -68,15 +68,14 @@ function move_guy()
 end
 
 function jump_guy()
- --sp = guy.anim2[flr(t%#guy.anim2 + 1)]
- sp = 1
+ 
  guy.y += guy.yspeed
 end
 
 function reset_jump_vars()
  y = 100
  guy.on_ground = true
- guy.yspeed = -8
+ guy.yspeed = -6
 end
 __gfx__
 00000000005555000005555000055550000555500055550000555500005555000555500005555000055550000055550000555500005555000000000000000000
